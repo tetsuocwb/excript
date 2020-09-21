@@ -1,0 +1,38 @@
+{% set name = "fuzzywuzzy" %}
+{% set version = "0.18.0" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  sha256: 45016e92264780e58972dca1b3d939ac864b78437422beecebb3095f8efd00e8
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
+
+requirements:
+  host:
+    - pip
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - fuzzywuzzy
+
+about:
+  home: "https://github.com/seatgeek/fuzzywuzzy"
+  license: "GNU General Public v2 (GPLv2)"
+  license_family: GPL2
+  license_file: 
+  summary: "Fuzzy string matching in python"
+  doc_url: 
+  dev_url: 
+
+extra:
+  recipe-maintainers:
+    - your-github-id-here
