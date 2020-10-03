@@ -1,7 +1,15 @@
-b = [12334.32, 'tetsuo', ' lucas', '123 022 ']
-c = []
-for a in b:
-    if str(a)[0] == " " or str(a)[len(str(a))-1] == " ":
-        print(a)
-        c.append
-    print(type(a))
+a = 0
+def func():
+    b = 0
+    a = 100
+    print(a)
+    def func2():
+        nonlocal b
+        b = 5
+        print(b, "dentro")
+    func2()
+    a += 1
+    print(b , 'fora')
+    print(a , 'func1')
+func()
+print(globals())
