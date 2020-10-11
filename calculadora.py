@@ -14,6 +14,7 @@ def numero(n):
 
     return
 
+
 def adicao():
     x = e.get()
     e.delete(0, END)

@@ -138,25 +138,49 @@
 #     c = input('\nContinuar? y ou n: ')
 
 
-# 5.16
-'''Escreva uma função que aceite Strings e calcule a quantidade de letras 
-em mauisculas e minúsculas que a String possui.'''
-#cap letters ascii 65-90 lower case 97-122
-def maiusMinus(s):
-    lower = 0
-    cap = 0
-    for i in s:
-        if 65 <= ord(i) <= 90:
-            cap += 1
-        if 97 <= ord(i) <= 122:
-            lower += 1
-    print(lower, "minusculas\n")
-    print(cap, "maiusculas")
+# # 5.16
+# '''Escreva uma função que aceite Strings e calcule a quantidade de letras 
+# em mauisculas e minúsculas que a String possui.'''
+# #cap letters ascii 65-90 lower case 97-122
+# def maiusMinus(s):
+#     lower = 0
+#     cap = 0
+#     for i in s:
+#         if 65 <= ord(i) <= 90:
+#             cap += 1
+#         if 97 <= ord(i) <= 122:
+#             lower += 1
+#     print(lower, "minusculas\n")
+#     print(cap, "maiusculas")
 
 
-r ='y'
-while r == "y":
-    t = input("insira um string: ")
+# r ='y'
+# while r == "y":
+#     t = input("insira um string: ")
 
-    maiusMinus(t)
-    r = input('Continuar y/n ?')
+#     maiusMinus(t)
+#     r = input('Continuar y/n ?')
+
+
+# # 5.19
+# # Imprima somente os numeros positivos
+
+# lista = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# saida = [i for i in lista if i % 2 == 0]
+# print(saida)
+
+# # 5.20
+# # verificar se um string é um palindromo
+
+# def palind():
+
+#     frase = input("Palindromo: ")
+#     if frase == ''.join(reversed(frase)):
+#         print(frase, ' é um palindromo.')
+#     else:
+#         print(frase,' não é um palindromo.')
+
+#    # print(''.join(reversed(frase)))
+
+
+# palind()
