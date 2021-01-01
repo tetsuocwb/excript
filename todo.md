@@ -4,4 +4,4 @@
 - tkinter
     - e.bind('<Return>', entrada)
     - e.bind('<Escape>', sair)
-    
+- minimax

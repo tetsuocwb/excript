@@ -10,9 +10,14 @@ def entrada(event):
     e.delete(0, END)
     e.insert(0, 'oi, ' + ent)
     #e.insert(0, "foi " + e.get())
+
+
+e.bind('<Return>', entrada)
+
 def sair(event):
     exit()
-e.bind('<Return>', entrada)
+
+
 e.bind('<Escape>', sair)
 
 
