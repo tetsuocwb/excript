@@ -1,19 +1,5 @@
-<ClockText>:
-    
-
 <Root>:
-    lab:lab
-    # Label:
-    #     id: lab
-    #     size_hint: 1, .2
-        #text:root.elapsed_time
-    ClockText: # <--------- !!!
-        id: clocktext 
-        size_hint: 0.75,.3
     Button:
         id: tempo
-        size_hint:1, .3
-        #on_press: root.elapsed()
-        on_press:root.atualiza()
-        text: root.elapsed_time
-    
+        on_press: root.elapsed()
+        #text: str(root.elapsed())
